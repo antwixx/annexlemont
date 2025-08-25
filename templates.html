@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Templates & Resources - Raise Your Voices</title>
+    <meta name="description" content="Download ready-to-use templates for letters, emails, and social media posts to effectively communicate your opposition.">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-container">
+                <a href="index.html" class="nav-logo">
+                    <span class="nav-logo-text">Raise Your Voices</span>
+                </a>
+                
+                <button class="nav-toggle" id="navToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="information.html" class="nav-link">Information</a></li>
+                    <li><a href="petitions.html" class="nav-link">Petitions</a></li>
+                    <li><a href="contacts.html" class="nav-link">Contacts</a></li>
+                    <li><a href="meetings.html" class="nav-link">Meetings</a></li>
+                    <li><a href="templates.html" class="nav-link active">Templates</a></li>
+                    <li><a href="flyers.html" class="nav-link">Flyers</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="page-content">
+        <div class="container">
+            <!-- Header -->
+            <div class="page-header">
+                <h1 class="page-title">Templates & Resources</h1>
+                <p class="page-description">
+                    Download ready-to-use templates for letters, emails, and social media posts to effectively communicate your opposition.
+                </p>
+            </div>
+
+            <!-- Template Categories -->
+            <div class="template-categories">
+                <div class="template-category">
+                    <div class="category-header">
+                        <i data-lucide="mail" class="category-icon"></i>
+                        <h2 class="category-title">Email Templates</h2>
+                        <p class="category-description">Professional email templates for contacting officials</p>
+                    </div>
+                    
+                    <div class="template-list">
+                        <div class="template-item">
+                            <div class="template-info">
+                                <h3 class="template-title">Village Board Email</h3>
+                                <p class="template-description">Formal email template for village board members expressing opposition to rezoning</p>
+                                <div class="template-meta">
+                                    <span class="template-type">Email Template</span>
+                                    <span class="template-length">~200 words</span>
+                                </div>
+                            </div>
+                            <div class="template-actions">
+                                <button class="btn btn-primary" onclick="showTemplate('village-board-email')">View Template</button>
+                                <button class="btn btn-outline" onclick="copyTemplate('village-board-email')">Copy Text</button>
+                            </div>
+                        </div>
+
+                        <div class="template-item">
+                            <div class="template-info">
+                                <h3 class="template-title">Mayor's Office Email</h3>
+                                <p class="template-description">Respectful but firm email template specifically for the mayor's office</p>
+                                <div class="template-meta">
+                                    <span class="template-type">Email Template</span>
+                                    <span class="template-length">~180 words</span>
+                                </div>
+                            </div>
+                            <div class="template-actions">
+                                <button class="btn btn-primary" onclick="showTemplate('mayor-email')">View Template</button>
+                                <button class="btn btn-outline" onclick="copyTemplate('mayor-email')">Copy Text</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="template-category">
+                    <div class="category-header">
+                        <i data-lucide="file-text" class="category-icon"></i>
+                        <h2 class="category-title">Formal Letters</h2>
+                        <p class="category-description">Printable formal letter templates for official correspondence</p>
+                    </div>
+                    
+                    <div class="template-list">
+                        <div class="template-item">
+                            <div class="template-info">
+                                <h3 class="template-title">Opposition Letter</h3>
+                                <p class="template-description">Comprehensive formal letter outlining all concerns about the proposed development</p>
+                                <div class="template-meta">
+                                    <span class="template-type">Formal Letter</span>
+                                    <span class="template-length">~400 words</span>
+                                </div>
+                            </div>
+                            <div class="template-actions">
+                                <button class="btn btn-primary" onclick="showTemplate('opposition-letter')">View Template</button>
+                                <button class="btn btn-outline" onclick="downloadTemplate('opposition-letter')">Download PDF</button>
+                            </div>
+                        </div>
+
+                        <div class="template-item">
+                            <div class="template-info">
+                                <h3 class="template-title">Public Comment Script</h3>
+                                <p class="template-description">Speaking points for public comment periods at village meetings</p>
+                                <div class="template-meta">
+                                    <span class="template-type">Speaking Points</span>
+                                    <span class="template-length">2-3 minutes</span>
+                                </div>
+                            </div>
+                            <div class="template-actions">
+                                <button class="btn btn-primary" onclick="showTemplate('public-comment')">View Template</button>
+                                <button class="btn btn-outline" onclick="copyTemplate('public-comment')">Copy Text</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="template-category">
+                    <div class="category-header">
+                        <i data-lucide="share-2" class="category-icon"></i>
+                        <h2 class="category-title">Social Media</h2>
+                        <p class="category-description">Ready-to-share social media content to spread awareness</p>
+                    </div>
+                    
+                    <div class="template-list">
+                        <div class="template-item">
+                            <div class="template-info">
+                                <h3 class="template-title">Facebook Post</h3>
+                                <p class="template-description">Engaging Facebook post to inform neighbors and gather support</p>
+                                <div class="template-meta">
+                                    <span class="template-type">Social Media</span>
+                                    <span class="template-length">Facebook optimized</span>
+                                </div>
+                            </div>
+                            <div class="template-actions">
+                                <button class="btn btn-primary" onclick="showTemplate('facebook-post')">View Template</button>
+                                <button class="btn btn-outline" onclick="copyTemplate('facebook-post')">Copy Text</button>
+                            </div>
+                        </div>
+
+                        <div class="template-item">
+                            <div class="template-info">
+                                <h3 class="template-title">Nextdoor Message</h3>
+                                <p class="template-description">Neighborhood-focused message for Nextdoor and local community apps</p>
+                                <div class="template-meta">
+                                    <span class="template-type">Social Media</span>
+                                    <span class="template-length">Community focused</span>
+                                </div>
+                            </div>
+                            <div class="template-actions">
+                                <button class="btn btn-primary" onclick="showTemplate('nextdoor-post')">View Template</button>
+                                <button class="btn btn-outline" onclick="copyTemplate('nextdoor-post')">Copy Text</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Usage Guide -->
+            <div class="usage-guide">
+                <h2 class="guide-title">How to Use These Templates</h2>
+                <div class="guide-grid">
+                    <div class="guide-item">
+                        <div class="guide-step">1</div>
+                        <div class="guide-content">
+                            <h3 class="guide-step-title">Personalize</h3>
+                            <p class="guide-step-description">Add your name, address, and personal concerns to make the message authentic</p>
+                        </div>
+                    </div>
+                    <div class="guide-item">
+                        <div class="guide-step">2</div>
+                        <div class="guide-content">
+                            <h3 class="guide-step-title">Customize</h3>
+                            <p class="guide-step-description">Modify the content to reflect your specific situation and concerns</p>
+                        </div>
+                    </div>
+                    <div class="guide-item">
+                        <div class="guide-step">3</div>
+                        <div class="guide-content">
+                            <h3 class="guide-step-title">Send</h3>
+                            <p class="guide-step-description">Use multiple channels - email, mail, and in-person delivery for maximum impact</p>
+                        </div>
+                    </div>
+                    <div class="guide-item">
+                        <div class="guide-step">4</div>
+                        <div class="guide-content">
+                            <h3 class="guide-step-title">Follow Up</h3>
+                            <p class="guide-step-description">Don't send just once - follow up regularly to show continued concern</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tips Section -->
+            <div class="tips-section">
+                <h2 class="tips-title">Communication Tips</h2>
+                <div class="tips-grid">
+                    <div class="tip-card">
+                        <i data-lucide="target" class="tip-icon"></i>
+                        <h3 class="tip-title">Be Specific</h3>
+                        <p class="tip-description">Reference specific properties, dates, and ordinances to show you're informed</p>
+                    </div>
+                    <div class="tip-card">
+                        <i data-lucide="heart" class="tip-icon"></i>
+                        <h3 class="tip-title">Stay Professional</h3>
+                        <p class="tip-description">Maintain a respectful tone while being firm about your concerns</p>
+                    </div>
+                    <div class="tip-card">
+                        <i data-lucide="users" class="tip-icon"></i>
+                        <h3 class="tip-title">Show Community Support</h3>
+                        <p class="tip-description">Mention that you represent broader neighborhood concerns, not just personal interests</p>
+                    </div>
+                    <div class="tip-card">
+                        <i data-lucide="clock" class="tip-icon"></i>
+                        <h3 class="tip-title">Act Quickly</h3>
+                        <p class="tip-description">Time is critical - send your messages promptly and encourage others to do the same</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Template Modal -->
+    <div id="templateModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 id="modalTitle" class="modal-title"></h3>
+                <button class="modal-close" onclick="closeModal()">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div id="modalTemplate" class="template-text"></div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-primary" onclick="copyModalTemplate()">Copy Template</button>
+                <button class="btn btn-outline" onclick="closeModal()">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <p class="footer-text">&copy; 2025 Raise Your Voices. Community action for neighborhood protection.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
